@@ -1,15 +1,433 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="ipad.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="first-nav d-flex gap-3">
+        <a class="text-decoration-none" href="#">For Individuals</a>
+        <a class="text-decoration-none" href="#">For Business</a>
+        <a class="text-decoration-none" href="#">For Universities</a>
+        <a class="text-decoration-none" href="#">For Governments</a>
+      </div>
 
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="mobile.css">
-  <link rel="stylesheet" href="ipad.css">
-</head>
-<body>
-  
-</body>
+      <nav class="navbar second-navbar navbar-expand-lg bg-body-tertiary py-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img src="images/coursera.png" alt="" width="127"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="explore-list nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle nav-link-hover pe-2"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Explore <i class="bi bi-chevron-down explore-icon"></i>
+                </a>
+
+                <div class="explore-dropdown">
+                  <div class="explore-container d-flex">
+                    <div class="explore-child">
+                      <a href="#"><h2>Explore roles</h2></a>
+                      <div class="explore-anchor">
+                        <a href="#">Data Analyst</a>
+                        <a href="#">Project Manager</a>
+                        <a href="#">Cyber Security Analyst</a>
+                        <a href="#">Data Scientist</a>
+                        <a href="#">Business Intelligence Analyst</a>
+                        <a href="#">Digital Marketing Specialist</a>
+                        <a href="#">UI / UX Designer</a>
+                        <a href="#">Machine Learning Engineer</a>
+                        <a href="#">Social Media Specialist</a>
+                        <a href="#">Computer Support Specialist</a>
+                        <a class="view" href="#">View all</a>
+                      </div>
+                    </div>
+                    <div class="explore-child">
+                      <a href="#"><h2>Explore categories</h2></a>
+                      <div class="explore-anchor">
+                        <a href="#">Artificial Intelligence</a>
+                        <a href="#">Business</a>
+                        <a href="#">Data Science</a>
+                        <a href="#">Information Technology</a>
+                        <a href="#">Computer Science</a>
+                        <a href="#">Healthcare</a>
+                        <a href="#">Physical Science and Engineering</a>
+                        <a href="#">Personal Development</a>
+                        <a href="#">Social Sciences</a>
+                        <a href="#">Language Learning</a>
+                        <a href="#">Arts and Humanities</a>
+                        <a class="view" href="#">View all</a>
+                      </div>
+                    </div>
+                    <div class="explore-child">
+                      <div class="first-child">
+                        <a href="#"><h2>Earn a Professional Certificate</h2></a>
+                        <div class="explore-anchor">
+                          <a href="#">Business</a>
+                          <a href="#">Computer Science</a>
+                          <a href="#">Data Science</a>
+                          <a href="#">Information Technology</a>
+                          <a class="view" href="#">View all</a>
+                        </div>
+                      </div>
+
+                      <div class="second-child">
+                        <a href="#"><h2>Earn an online degree</h2></a>
+                        <div class="explore-anchor">
+                          <a href="#">Bachelor's Degrees</a>
+                          <a href="#">Master's Degrees</a>
+                          <a href="#">University Certificates</a>
+                          <a class="view" href="#">View all</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="explore-child">
+                      <div class="first-child">
+                        <a href="#"><h2>Explore trending skills</h2></a>
+                        <div class="explore-anchor">
+                          <a href="#">Python</a>
+                          <a href="#">Artificial Intelligence</a>
+                          <a href="#">Excel</a>
+                          <a href="#">Machine Learning</a>
+                          <a href="#">SQL</a>
+                          <a href="#">Project Management</a>
+                          <a href="#">Power Bl</a>
+                          <a href="#">Marketing</a>
+                        </div>
+                      </div>
+
+                      <div class="second-child">
+                        <a href="#"><h2>Prepare for a certification exam</h2></a>
+                        <div class="explore-anchor">
+                          <a class="view" href="#">View all</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="not-sure">
+                    <span>Not sure where to begin?</span>
+                    <a href="#">Browse free courses</a>
+                    <span>or</span>
+                    <a href="#">Learn more about</a>
+                    <a href="#">
+                      <span>Coursera</span> <img src="images/plus.png" alt="">
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-hover" href="#">Degrees</a>
+              </li>
+            </ul>
+            <form class="d-flex ms-3 form-width" role="search">
+              <input
+                class="form-control me-2 rounded-5 input-padding py-2"
+                type="search"
+                placeholder="What do you want to learn?"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-succes button-icon" type="submit">
+                <img
+                  class="white-search"
+                  src="images/white-search.png"
+                  alt=""
+                />
+              </button>
+            </form>
+
+            <div class="d-flex ms-auto text align-items-center gap-3">
+              <a class="pe-2" href="#">
+                <img class="gemini-image" src="images/gemini.svg" alt="" />
+              </a>
+
+              <a class="login" href="#">Log In</a>
+
+              <a class="join" href="#">Join for Free</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

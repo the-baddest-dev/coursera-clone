@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+  font-family: "Source Sans 3", sans-serif;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+}
+
+.section-width{
+  max-width:1330px;
+  width: 100%;
+  margin: 0 auto; 
+}
+
+.first-nav{
+  border: 2px solid #0d0f12;
+  background-color: #0d0f12;
+  padding: 0px 290px;
+  height: 40px;
+}
+
+.first-nav a{
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  /* color: red; */
+  border: 2px solid #0d0f12;
+  background-color: #0d0f12;
+  padding: 5px 8px;
+}
+
+.first-nav a:hover{
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  color: #0d0f12;
+  padding: 5px 8px;
+}
+
+.second-navbar{
+  padding: 0px 290px;
+  font-size: 14px;
+}
+
+.dropdown-toggle::after{
+  display: none;
+}
+
+.nav-link-hover{
+  border: 1px solid transparent;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  padding: 8px 0px;
+  position: relative;
+}
+
+.nav-link-hover:hover{
+  color: #0b408b;
+  /* border: 1px solid #f0f6ff; */
+  background-color: #f0f6ff;
+  border-radius: 5px;
+  padding: 8px 0px;
+}
+
+.explore-icon{
+  font-size: 11px;
+  -webkit-text-stroke: 0.5px;
+  padding-left: 3px;
+}
+
+.form-width{
+  width: 50%;
+  position: relative;
+}
+
+.input-padding:focus{
+  border: 1px solid #804ee4;
+  outline: 1px solid #878889;
+  outline-offset: -2px;
+  box-shadow: none;
+}
+
+.input-padding:hover{
+  background-color: #f0f6ff;
+  color: #0d0f12;
+}
+
+.input-padding:hover::placeholder{
+  color: #0d0f12;
+}
+
+.button-icon{
+  background-color: #0157d2;
+  border: 2px solid #0157d2;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  padding: 0;
+  position: absolute;
+  right: 12px;
+  bottom: 3px;
+}
+
+.white-search{
+  width: 18px;
+}
+
+.button-icon:hover{
+  background-color: #0b408b;
+  border: 2px solid #0b408b;
+}
+
+.login{
+  text-decoration: none;
+  color: #0056d2;
+}
+
+.login:hover{
+  text-decoration: underline 2px solid #0056d2;
+}
+
+.join{
+  text-decoration: none;
+  border: 1px solid #0b408b;
+  border-radius: 5px;
+  color: #0157d2;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 5px 10px;
+}
+
+.join:hover{
+  background-color: #f0f6ff;
+  color: #0b408b;
+}
+
+.explore-dropdown{
+  display: none;
+}
+
+.explore-list:hover .explore-dropdown{
+  display: block;
+  position: absolute;
+  border-top: 2px solid #e0e0e0;
+  background-color: #ffffff;
+  /* background-color: pink; */
+  top: 100%;
+  width: 100%;
+  left: 0;
+  padding: 30px 380px 0px 380px;
+}
+
+.explore-dropdown::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  /* background-color: rgba(255, 0, 0, 0.4); */
+}
+
+.explore-list{
+  position: static;
+}
+
+.explore-child a{
+  text-decoration: none;
+  color: #0d0f12;
+}
+
+.explore-child h2{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.explore-child h2:hover{
+  text-decoration: underline;
+}
+
+.explore-anchor a{
+  display: block;
+  padding-bottom: 5px;
+}
+
+.explore-anchor a:hover{
+  text-decoration: underline;
+}
+
+.explore-container{
+  gap: 90px;
+  border-bottom: 1px solid #c1cbdb;
+  padding-bottom: 25px;
+}
+
+a.view{
+  text-decoration: underline 1px solid #0d0f12;
+  padding-top: 2px;
+}
+
+a.view:hover{
+  text-decoration: none;
+}
+
+.explore-child:nth-child(3),
+.explore-child:nth-child(4){
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.explore-anchor{
+  /* border: 2px solid yellow; */
+  padding-top: 2px;
+}
+
+.not-sure{
+  padding: 25px 0;
+}
+
+.not-sure a:nth-child(2):hover,
+.not-sure a:nth-child(4):hover{
+  text-decoration: none;
+}
+
+.not-sure a:nth-child(5){
+  color: #0056d2;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.not-sure span:nth-child(1){
+  /* border: 2px solid green; */
+  padding-right: 8px;
+}
+
+.not-sure a:nth-child(2){
+  color: #0d0f12;
+  padding-right: 3px;
+}
+
+.not-sure a:nth-child(4){
+  color: #0d0f12;
+  padding-left: 3px;
+}
+
+.not-sure a:nth-child(5) img{
+  /* border: 2px solid lawngreen; */
+  margin-left: -10px;
+  margin-top: -5px;
+}
+
+.gemini-image{
+  /* border: 2px solid red; */
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.gemini-image:hover{
+  background-color: #f0f6ff;
+}
+
+
+
